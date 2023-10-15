@@ -204,8 +204,9 @@ ul li a{
     display: block;
     padding: 2.5vw 2vw;
     font-size: 2vw;
-    background: #ffffffc9;
+    background:var(--shw);
     color: #000;
+    width: inherit;
     transition: 0.5s;
 }
 
@@ -289,6 +290,7 @@ ul li a{
 #myimage{
     height: 90%;
     width: 110%;
+    box-shadow: 0 0 15px -2px #444444;
     background-color: var(--shw);
     border-radius: 50%;
     margin-top: 10vh;
@@ -298,10 +300,10 @@ ul li a{
 #container>#myimage>img{
     /* border-radius: 10px; */
     width: 70vh;
-    height: 100vh;
-    margin-top: -25vh;
+    height: 90vh;
+    margin-top: -11vh;
     object-position: center;
-    object-fit: fill;
+    object-fit: contain;
 }
 
 #texts{
@@ -555,13 +557,16 @@ ul li a{
 
 #skills img{
     height:20vh;
-    width: 18vh;
+    max-width: 25vh;
     border-radius: 10px;
     object-position: center;
+    object-fit: contain;
+    background-color: #fff;
 }
 
 .cards{
     display: flex;
+    flex-wrap: wrap;
     gap: 5vh;
     margin-top: 3vh;
     transform: rotateX(270deg);
@@ -770,6 +775,7 @@ ul li a{
     width: 100%;
     transform-origin: 50% 65%;
   transition: transform 1s, filter 1s ease-in-out;
+  box-shadow: 0 0 15px -2px #444444;
 }
 
 #webimg>img:hover{
@@ -911,7 +917,15 @@ ul li a{
         margin-top: 2vh;
         margin-left: 80vw;
     }
-
+    ul li a{
+        font-size: 6vw;
+        padding: 5vw ;
+        width: 32vw;
+    }
+    /* .bar span::before{
+        width: 20vw;
+        height: 10vh;
+    } */
     /* PAGE 1 */
 
     #container{
@@ -925,7 +939,7 @@ ul li a{
     #container>#myimage>img{
         width: 120%;
         height: 140%;
-        margin-top: -12vh;
+        margin-top: -5vh;
         margin-left: -5vw;
     }
     #texts{

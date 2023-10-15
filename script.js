@@ -367,20 +367,20 @@ gsap.to('#webprojects', {
   })
   
 
-  gsap.to("#myimage ",{
-    scrollTrigger:{
-        trigger:"#page1",
-        start:"top top",
-        // end: "bottom 10%",
-        scrub:2,
-        // end:"bottom 80%",
-        scroller:"body",
-        // markers: true
-    },
-    x:"40vw",
-    rotate: "180",
-    duration:1,
-})
+//   gsap.to("#myimage ",{
+//     scrollTrigger:{
+//         trigger:"#page1",
+//         start:"top top",
+//         // end: "bottom 10%",
+//         scrub:2,
+//         // end:"bottom 80%",
+//         scroller:"body",
+//         // markers: true
+//     },
+//     x:"40vw",
+//     rotate: "180",
+//     duration:1,
+// })
 
   
 
