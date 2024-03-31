@@ -67,6 +67,7 @@ toggle.addEventListener("click", function () {
         document.documentElement.style.setProperty("--pri", "rgb(255, 255, 255)")
         document.documentElement.style.setProperty("--sec", "rgb(23, 23, 23)")
         document.documentElement.style.setProperty("--shw", "#e0553a")
+        document.querySelector('#video').style.display="none";
         flag = 1;
     }
     else {
@@ -75,6 +76,8 @@ toggle.addEventListener("click", function () {
         document.documentElement.style.setProperty("--pri", "rgb(23, 23, 23)")
         document.documentElement.style.setProperty("--sec", "rgb(255, 255, 255)")
         document.documentElement.style.setProperty("--shw", "#FBE094")
+        document.querySelector('#video').style.display="initial";
+
         flag = 0;
     }
 })
